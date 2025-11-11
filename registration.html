@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            font-family:Georgia, 'Times New Roman', Times, serif;
+    background-color: rgba(150, 177, 197, 0.497);
+    margin: 5%;
+    padding: auto;
+        }
+        .form{
+                background-color: #ffffffba;
+    color: #333;
+    font-size: medium;
+    border: 2px solid #ccc;
+    padding: 25px;
+    margin: auto;
+    width: 500px;
+    height: 600px;
+    text-align: center;
+    font-weight: bold;
+    box-shadow: 4px 4px 4px #6782a4a0;
+    line-height: 24px;
+        }
+        input{
+    border-radius: 5px;
+    padding: 10px;
+    border: 1px solid #4b48487f;
+}
+textarea{
+     border-radius: 10px;
+    padding: 10px;
+    border: 1px solid #4b48487f;
+}
+button{
+    border-radius: 5px;
+    color: #fcf9f9;
+    border: 2px solid #000;
+    background-color: rgba(0, 76, 255, 0.579);
+    padding: 5px 20px;
+    cursor: pointer;
+    font-size: 16px;
+}
+    </style>
+</head>
+<body>
+    <div class="form">
+    <h1>Registration form</h1>
+    <form action="">
+    <p>
+          name:*
+          <input type="text" name="name" placeholder="your name" required />
+        </p>
+        <p>
+          age:* <input type="text" age="age" placeholder="your age" required />
+        </p>
+        <fieldset>
+          <legend>gender*</legend>
+          <p>
+            male <input type="radio" name="gender" id="male" required /> female
+            <input type="radio" name="gender" id="female" required /> other
+            <input type="radio" name="gender" id="other" required />
+          </p>
+        </fieldset>
+        <p>
+          address:
+          <textarea
+            name="address"
+            id="address"
+            cols="50"
+            rows="4"
+            placeholder="your current address"
+          ></textarea>
+        </p>
+        <p>
+          email:*
+          <input
+            type="email"
+            name="email"
+            id="email"
+            placeholder="your email id"
+            required
+          />
+        </p>
+        <label for="course">course:</label>
+        <select name="course" id="course">
+            <option value="">--Please choose your course--</option>
+            <option value="mca">MCA</option>
+            <option value="bca">BCA</option>
+            <option value="mba">MBA</option>
+            <option value="bba">BBA</option>
+        </select>
+        <br>
+        <br>
+        <input type="checkbox" name="terms" id="terms" value="accepted">
+        <label for="terms">I confirm that the details provided are correct to the best of my knowledge</label><br><br>
+        <input type="submit" value="Register">
+        </form> 
+        </div>
+</body>
+</html>

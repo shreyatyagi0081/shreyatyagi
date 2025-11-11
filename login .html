@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login Page</title>
+  <!--<link rel="stylesheet" href="/quiz/style.css">-->
+  <style>
+    body{
+      padding-top: 50px;
+      font-family:Georgia, 'Times New Roman', Times, serif;
+    background-color: rgba(147, 182, 182, 0.497);
+    margin: 5%;
+    }
+    .login{
+    background-color: #f0f0f0;
+    color: #333;
+    font-size: medium;
+    border: 2px solid #ccc;
+    padding: 20px;
+    margin: auto;
+    width: 500px;
+    height: 300px;
+    text-align: center;
+    font-weight: bold;
+    box-shadow: 4px 4px 4px #4d7ba8a0;
+    line-height: 24px;
+}
+input{
+    border-radius: 10px;
+    padding: 10px;
+    border: 1px solid #4b48487f;
+}
+button{
+    border-radius: 10px;
+    color: #fcf9f9;
+    border: 2px solid #000;
+    background-color: rgba(0, 76, 255, 0.579);
+    padding: 5px 20px;
+    cursor: pointer;
+    font-size: 16px;
+}
+  </style>
+</head>
+<body>
+  <div class="login" align="center">
+  <h1 align="center">Login Page</h1>
+
+  <form action="/class web/registration.html" method="post">
+    <label for="username">Username:</label>
+    <input type="text" id="username" name="username" placeholder="Enter username" required><br><br>
+
+    <label for="password">Password:</label>
+    <input type="password" id="password" name="password" placeholder="Enter password" required><br><br>
+
+    <input type="submit" value="Login">
+  </form>
+<br>
+  <p>Don't have an account? <a href="#">Sign up</a></p>
+</div>
+</body>
+</html>
