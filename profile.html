@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Your Name - Profile</title>
+    <style>
+      /* Basic Reset */
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: Arial, sans-serif;
+        line-height: 1.6;
+        color: #100f0f;
+        background-color: #52527274;
+        padding: 40px;
+      }
+
+      /* Header */
+      header {
+        text-align: center;
+        padding: 20px;
+        background-color: #0b0b0b;
+        color: #ffffffc8;
+      }
+
+      header h1 {
+        font-size: 2.5em;
+      }
+
+      header p {
+        font-style: italic;
+      }
+
+      /* Profile Section */
+      #profile {
+        text-align: center;
+        margin: 20px auto;
+        
+      }
+
+      #profile img {
+        border-radius: 100%;
+        width: 200px;
+        height: 200px;
+        overflow: hidden;
+        object-fit: fill;
+        margin-bottom: 10px;
+      }
+
+      /* Skills Section */
+      #skills {
+        margin: 20px auto;
+        text-align: center;
+      }
+
+      #skills h2 {
+        font-size: 2em;
+        color: #0e0e0e;
+      }
+
+      #skills ul {
+        list-style-type: circle;
+      }
+
+      #skills li {
+        background: #dddddda7;
+        padding: 10px;
+        margin: 5px;
+        border-radius: 5px;
+        display: inline-block;
+      }
+
+      /* Portfolio Section */
+      #portfolio {
+        margin: 20px auto;
+        text-align: center;
+      }
+
+      #portfolio h2 {
+        font-size: 2em;
+        color: #0b0a0a;
+      }
+
+      .project {
+        width: 100%;
+        background: #ffffffbd;
+        border: 1px solid #f2eaeaad;
+        padding: 15px;
+        margin: 10px;
+        border-radius: 8px;
+        
+      }
+
+      .project h3 {
+        margin-bottom: 8px;
+      }
+
+      /* Contact Section */
+      #contact {
+        margin: 20px auto;
+        text-align: center;
+      }
+
+      #contact form {
+        max-width: 500px;
+        margin: auto;
+        padding: 20px;
+        background: #ffffff92;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      }
+
+      #contact label {
+        display: block;
+        margin-top: 10px;
+      }
+
+      #contact input,
+      #contact textarea {
+        width: 100%;
+        padding: 10px;
+        margin: 5px 0;
+        border: 1px solid #0f0d0d00;
+        border-radius: 4px;
+      }
+
+      #contact button {
+        background: #422cb1ed;
+        color: #f5eded;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 4px;
+        cursor: pointer;
+      }
+
+      #contact button:hover {
+        background: #b8b4b4;
+      }
+
+      /* Footer */
+      footer {
+        text-align: center;
+        padding: 10px;
+        margin-top: 20px;
+        font-size: 0.9em;
+        color: #302f2f;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>shreya tyagi</h1>
+      <p>Web Developer</p>
+    </header>
+
+    <section id="profile">
+      <img class="img1" src="" alt="Profile Picture" />
+      <p style="color: #0b0b0b;">
+        Hello! I'm <em>Shreya tyagi</em>, a passionate web developer with a love for
+        creating beautiful and functional websites.
+      </p>
+    </section>
+
+    <section id="skills">
+      <h2>Skills</h2>
+      <ul>
+        <li>HTML & CSS</li><br>
+        <li>SQL</li>
+        <li>Python</li>
+        <li>Responsive Design</li>
+      </ul>
+    </section>
+
+    <section id="portfolio">
+      <h2>Portfolio</h2>
+      <div class="project">
+        <h3>Project 1</h3>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Est corrupti repellat, dolorum et dolorem facere ut blanditiis fuga unde consequatur quibusdam iste eligendi quidem quasi ipsam, molestiae, veritatis sapiente sed.</p>
+      </div>
+      <div class="project">
+        <h3>Project 2</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis doloribus eveniet repellendus molestiae odit, qui mollitia aliquid eaque iste ex blanditiis est et incidunt neque molestias accusantium quas? Quos, corporis</p>
+      </div>
+    </section>
+
+    <section id="contact">
+      <h2>Contact Me</h2>
+      <form>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required />
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required />
+
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" required></textarea>
+
+        <button type="submit">Send Message</button>
+      </form>
+    </section>
+
+    <footer>
+      <p>&copy; 2024 shreya tyagi. All rights reserved.</p>
+    </footer>
+  </body>
+</html>
