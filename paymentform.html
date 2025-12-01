@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>payment form</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="cantainer">
+      <form action="" method="get">
+        <h1 class="heading">payment form</h1>
+        <hr />
+        <h2>personal information</h2>
+        <p>Required field are followed by *</p>
+        <p>
+          name:*
+          <input type="text" name="name" placeholder="your name" required />
+        </p>
+        <p>
+          age:* <input type="text" age="age" placeholder="your age" required />
+        </p>
+        <p>
+          phone no.:*
+          <input
+            type="number"
+            phoneno="phoneno"
+            placeholder="your phone no."
+            required
+          />
+        </p>
+        <p>
+          date_of_birth:*
+          <input type="date" name="date_of_birth" id="date_of_birth" required />
+        </p>
+        <fieldset>
+          <legend>gender*</legend>
+          <p>
+            male <input type="radio" name="gender" id="male" required /> female
+            <input type="radio" name="gender" id="female" required /> other
+            <input type="radio" name="gender" id="other" required />
+          </p>
+        </fieldset>
+        <p>
+          address:
+          <textarea
+            name="address"
+            id="address"
+            cols="50"
+            rows="4"
+            placeholder="your current address"
+          ></textarea>
+        </p>
+        <p>
+          email:*
+          <input
+            type="email"
+            name="email"
+            id="email"
+            placeholder="your email id"
+            required
+          />
+        </p>
+        <p>
+          pincode:*
+          <input
+            type="number"
+            name="pincode"
+            id="pincode"
+            placeholder="pincode"
+            required
+          />
+        </p>
+        <hr />
+        <h2>payment information</h2>
+        <p>
+          card type:*
+          <select name="card_type" id="card_type" required>
+            <option value="">--select card type--</option>
+            <option value="vis">visa</option>
+            <option value="paytm">pyatm</option>
+            <option value="rupay">rupay</option>
+            <option value="googlepay">googlepay</option>
+            <option value="other">other</option>
+          </select>
+        </p>
+        <p>
+          card no:*
+          <input type="number" name="card_no" id="card_no" required />
+        </p>
+        <p>
+          cvv:*
+          <input type="password" name="cvv" id="cvv" required />
+        </p>
+        <input type="submit" value="pay now" />
+      </form>
+    </div>
+  </body>
+</html>
